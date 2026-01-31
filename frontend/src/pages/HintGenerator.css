@@ -1,0 +1,137 @@
+.hint-generator {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.logout-button {
+  padding: 0.5rem 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.input-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.question-input,
+.code-input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 200px;
+  height: 100%;
+}
+
+.code-input {
+  font-family: monospace;
+  min-height: 150px;
+}
+
+.get-hint-button,
+.direct-answer-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.get-hint-button:hover,
+.direct-answer-button:hover {
+  background-color: #0056b3;
+}
+
+.get-hint-button:disabled,
+.direct-answer-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+.hints-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hint-card,
+.direct-answer-card {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hint-card h3,
+.direct-answer-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.hint-content,
+.direct-answer-content {
+  line-height: 1.6;
+}
+
+.hint-line {
+  margin: 0.5rem 0;
+}
+
+.direct-answer-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.direct-answer-button {
+  background-color: #28a745;
+}
+
+.direct-answer-button:hover {
+  background-color: #218838;
+}
+
+.direct-answer-card {
+  background-color: #e8f5e9;
+  border-color: #c3e6cb;
+} 
