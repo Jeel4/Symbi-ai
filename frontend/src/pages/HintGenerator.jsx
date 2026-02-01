@@ -51,7 +51,7 @@ export default function HintGenerator({ user, setUser }) {
       setLoading(true);
       setError("");
 
-      const response = await fetch("http://localhost:5000/api/get_hint", {
+      const response = await fetch("http://13.49.139.136:5000/api/get_hint", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
