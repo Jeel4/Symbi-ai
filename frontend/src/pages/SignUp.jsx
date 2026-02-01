@@ -65,7 +65,7 @@ export default function SignUp({ setUser }) {
 
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/register', {
+      const response = await axios.post('http://13.49.139.136:5000/register', {
         username,
         email,
         password

@@ -52,7 +52,7 @@ export default function Login({ setUser }) {
 
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/login', {
+      const response = await axios.post('http://13.49.139.136:5000/login', {
         email,
         password
       });
