@@ -5,3 +5,4 @@ backoff
 bcrypt
 PyJWT
 python-dotenv
+gunicorn
