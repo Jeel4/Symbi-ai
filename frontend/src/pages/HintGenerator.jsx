@@ -160,7 +160,7 @@ export default function HintGenerator({ user, setUser, conversation, setConversa
       sessionIdRef.current = generateSessionId(user?.username || 'user');
     }
     prevQuestionRef.current = question;
-  }, [question]);
+  }, [question]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Scroll to bottom of feed when new hint arrives
   useEffect(() => {

@@ -95,7 +95,7 @@ export default function MetricsDashboard({ user, setUser }) {
   useEffect(() => {
     if (!user) { navigate('/'); return; }
     fetchMetrics();
-  }, [user]);
+  }, [user]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchMetrics = async () => {
     setLoading(true); setError('');
@@ -109,8 +109,6 @@ export default function MetricsDashboard({ user, setUser }) {
     } catch (e) { setError(e.message); }
     finally { setLoading(false); }
   };
-
-  const hlColor = (r) => r >= 70 ? 'var(--success)' : r >= 40 ? 'var(--warning)' : 'var(--error)';
 
   return (
     <>
