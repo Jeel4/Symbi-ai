@@ -1,8 +1,11 @@
 flask
 flask-cors
-requests
-backoff
+flask-sqlalchemy
+flask-migrate
+langchain
+langchain-groq
+python-dotenv
 bcrypt
 PyJWT
-python-dotenv
+backoff
 gunicorn
