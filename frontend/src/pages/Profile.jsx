@@ -34,7 +34,7 @@ export default function Profile({ user, setUser }) {
   useEffect(() => {
     if (!user) { navigate('/'); return; }
     fetchProfile();
-  }, [user]);
+  }, [user]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchProfile = async () => {
     setLoading(true);
