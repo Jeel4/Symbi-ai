@@ -80,3 +80,10 @@ logs/
 .coverage
 htmlcov/
 .pytest_cache/
+
+# --- PRIVATE KEYS ---
+*.pem
+*.key
+*.p12
+*.pfx
+INSTANCE-KEY.pem
