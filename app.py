@@ -69,7 +69,10 @@ def create_app() -> Flask:
     Migrate(app, db)        # Flask-Migrate: run "flask db migrate" for schema changes
 
     # CORS: allow frontend origins
-    CORS(app, resources={r"/*": {"origins": "*"}})
+    CORS(app, resources={r"/*": {"origins": [
+    "https://symbi-ai-7ng5.vercel.app",
+    "http://localhost:3000"
+     ]}})
 
     # ── Register Blueprints ───────────────────────────────────────────────────
     # Each blueprint is a mini-app with its own routes
